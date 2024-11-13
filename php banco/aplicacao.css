@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 60%;
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Estilos para o título */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Estilos para o formulário */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para os rótulos (labels) */
+label {
+    font-size: 14px;
+    margin: 8px 0 5px;
+    color: #555;
+}
+
+/* Estilos para os campos de input e select */
+input, select {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Estilos para o botão */
+button {
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Media Query para telas pequenas (celulares, tablets) */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Aumenta a largura do formulário para ocupar 90% da tela */
+        padding: 20px; /* Diminui o padding para caber melhor em telas pequenas */
+    }
+
+    h1 {
+        font-size: 24px; /* Reduz o tamanho da fonte do título em telas pequenas */
+    }
+
+    label {
+        font-size: 12px; /* Reduz o tamanho da fonte dos rótulos */
+    }
+
+    input, select {
+        font-size: 14px; /* Ajusta o tamanho da fonte dos campos de input/select */
+        padding: 10px; /* Reduz o padding dos campos para uma melhor visualização */
+    }
+
+    button {
+        font-size: 14px; /* Ajusta o tamanho da fonte do botão */
+        padding: 10px; /* Reduz o padding do botão */
+    }
+}
+
+/* Media Query para telas ainda menores (como celulares muito pequenos) */
+@media (max-width: 480px) {
+    .container {
+        width: 95%; /* Faz a largura da container ocupar 95% da tela */
+        margin: 20px auto; /* Ajusta a margem para não ficar muito colado nas bordas */
+    }
+
+    input, select {
+        font-size: 14px; /* Ajusta o tamanho da fonte dos campos */
+        padding: 8px; /* Ajusta o padding para caber melhor na tela */
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px; /* Ajuste do padding do botão */
+    }
+}
+
+/* Estilo para os botões de link */
+.btn, .logout-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background-color: #4CAF50;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15px;
+}
